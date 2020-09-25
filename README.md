@@ -22,7 +22,7 @@ from fuzzycorr.t_norms import godel
 strict_ordering = lukasiewicz_strict_ordering_factory(r=0.2)
 
 # create fuzzy correlation function with tnorm
-fuzzy_corr = fuzzy_correlation_factory(godel)
+fuzzy_corr = fuzzy_correlation_factory(strict_ordering, godel)
 
 # load data
 x = np.random.random(10)
