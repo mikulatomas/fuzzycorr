@@ -5,7 +5,7 @@ from fuzzycorr.utils import permutation_pairs
 def fuzzy_correlation_factory(strict_ordering, t_norm):
     """Meta function for creating fuzzy correlation function"""
 
-    vstrict_orcering = np.vectorize(strict_ordering, otypes=[np.float64])
+    vstrict_ordering = np.vectorize(strict_ordering, otypes=[np.float64])
     vt_norm = np.vectorize(t_norm, otypes=[np.float64])
 
     def fuzzy_correlation(x, y):
@@ -15,9 +15,9 @@ def fuzzy_correlation_factory(strict_ordering, t_norm):
         xi, xj = x[index_permutations].T
         yi, yj = y[index_permutations].T
 
-        xixj = vstrict_orcering(xi, xj)
-        yiyj = vstrict_orcering(yi, yj)
-        yjyi = vstrict_orcering(yj, yi)
+        xixj = vstrict_ordering(xi, xj)
+        yiyj = vstrict_ordering(yi, yj)
+        yjyi = vstrict_ordering(yj, yi)
 
         concordant_pairs = vt_norm(xixj, yiyj)
         discordant_pairs = vt_norm(xixj, yjyi)
