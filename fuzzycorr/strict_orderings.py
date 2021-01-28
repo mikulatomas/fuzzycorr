@@ -16,3 +16,7 @@ def product_strict_ordering_factory(r):
         return max(0, 1 - np.exp(-1 * 1 / r * (y - x)))
 
     return strict_ordering
+
+
+def classic_ordering(x, y):
+    return x < y
