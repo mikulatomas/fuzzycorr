@@ -1,3 +1,8 @@
+[![PyPI version](https://badge.fury.io/py/fuzzycorr.svg)](https://badge.fury.io/py/fuzzycorr)
+[![codecov](https://codecov.io/gh/mikulatomas/fuzzycorr/branch/main/graph/badge.svg?token=LRLWZI58ID)](https://codecov.io/gh/mikulatomas/fuzzycorr)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
 # fuzzycorr
 A ``numpy`` implementation of Robust Rank Correlation Coefficients (fuzzy correlation) based on paper:
 
