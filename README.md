@@ -2,7 +2,8 @@
 A ``numpy`` implementation of Robust Rank Correlation Coefficients (fuzzy correlation) based on paper:
 
 ```
-Bodenhofer, U., and F. Klawonn. "Robust rank correlation coefficients on the basis of fuzzy." Mathware & Soft Computing 15.1 (2008): 5-20.
+Bodenhofer, U., and F. Klawonn. "Robust rank correlation coefficients on the basis of fuzzy."
+Mathware & Soft Computing 15.1 (2008): 5-20.
 ```
 
 This implementation is experimental and need future optimization and testing.
@@ -33,19 +34,3 @@ fuzzy_corr(x, y)
 ```
 
 Visit [example Jupiter Notebook](example.ipynb).
-
-## Development
-
-Clone this repository to the folder, then:
-
-```bash
-# create virtualenv (optional)
-$ mkvirtualenv fuzzycorr -p python3
-
-#if is not actived (optional)
-$ workon fuzzycorr 
-
-$ pip install -e .
-
-$ python setup.py test
-```
