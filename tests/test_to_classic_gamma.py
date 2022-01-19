@@ -1,9 +1,9 @@
+import numpy as np
+
 from fuzzycorr import fuzzy_correlation_factory
 from fuzzycorr.strict_orderings import classic_ordering
-from fuzzycorr.t_norms import godel, lukasiewicz, product
+from fuzzycorr.t_norms import godel
 from fuzzycorr.utils import permutation_pairs
-
-import numpy as np
 
 
 def crisp_gamma(x, y):

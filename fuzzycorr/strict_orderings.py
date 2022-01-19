@@ -1,5 +1,3 @@
-"""Strict ordering definitions"""
-
 import numpy as np
 
 

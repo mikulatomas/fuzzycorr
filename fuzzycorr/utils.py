@@ -1,12 +1,11 @@
-"""Utils functions needed for this implementation"""
-
 import numpy as np
 
 
 def permutation_pairs(x):
-    """Fast way how calculate all permutations suggested by @Jaime on https://stackoverflow.com/questions/27323448/numpy-array-to-permutation-matrix.
+    """Fast way how calculate all permutations suggested by @Jaime on 
+    https://stackoverflow.com/questions/27323448/numpy-array-to-permutation-matrix.
 
-    There is probably still room for improvement because of the delete line."""
+    There is probably still room for improvement."""
 
     n = x.shape[0]
     perm = np.empty((n, n, 2), dtype=x.dtype)
