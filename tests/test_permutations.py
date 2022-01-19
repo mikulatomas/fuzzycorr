@@ -1,7 +1,8 @@
-from fuzzycorr.utils import permutation_pairs
-import pytest
-import numpy as np
 from itertools import permutations as slow_permutations
+
+import numpy as np
+
+from fuzzycorr.utils import permutation_pairs
 
 
 def test_permutation():

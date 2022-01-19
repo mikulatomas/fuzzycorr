@@ -1,9 +1,10 @@
+import numpy as np
+import pytest
+
 from fuzzycorr import fuzzy_correlation_factory
 from fuzzycorr.strict_orderings import lukasiewicz_strict_ordering_factory, product_strict_ordering_factory
 from fuzzycorr.t_norms import godel, lukasiewicz, product
 
-import numpy as np
-import pytest
 
 test_input_data = []
 
