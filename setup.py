@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="fuzzycorr",
-    version="0.1.0",
+    version="0.1.1",
     author="Tomáš Mikula",
     author_email="mail@tomasmikula.cz",
     description="A numpy implementation of Robust Rank Correlation Coefficients.",
